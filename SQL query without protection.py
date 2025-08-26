@@ -7,7 +7,7 @@ with conn:
     c.execute(query)
     res = c.fetchall()
     if res:
-        print("Jūsų profilio duomenys yra:")
+        print("Your profile data is:")
         print(res)
     else:
-        print(f"Vartotojas {inp_username} neegzistuoja arba neteisingas slaptažodis")
+        print(f"User {inp_username} does not exist or wrong password")
