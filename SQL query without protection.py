@@ -1,5 +1,5 @@
-inp_username = input("Įveskite username: ")
-inp_password = input("Įveskite slaptažodį: ")
+inp_username = input("Enter the username: ")
+inp_password = input("Enter the password: ")
 
 query = f"SELECT * FROM user WHERE user.username='{inp_username}' AND user.password='{inp_password}';"
 
