@@ -8,7 +8,7 @@ with sqlite3.connect("employees") as conn:
         name Tom 
         surname Gordon
         role Python developer
-        salary 2000
+        salary 3000
         experience 2 years  
     )    
 ''')
