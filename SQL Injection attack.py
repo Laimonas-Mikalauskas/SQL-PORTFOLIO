@@ -7,4 +7,4 @@ with conn:
     print("=>>>>> ", query)
     c.execute(query)
     res = c.fetchall()
-    print("Jūsų profilio duomenys yra:", res)
+    print("Your profile data is:", res)
