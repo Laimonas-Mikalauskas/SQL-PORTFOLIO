@@ -2,8 +2,8 @@ from this import c
 
 from SQLite.main import conn
 
-inp_username = input("Enter the username: ")
-inp_password = input("Enter the password: ")
+inp_username = input("Enter the username:")
+inp_password = input("Enter the password:")
 
 with conn:
     c.execute("SELECT * FROM user WHERE user.username=? AND user.password=?;", (inp_username, inp_password))
