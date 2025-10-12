@@ -14,6 +14,6 @@ with conn:
     c.execute(query)
 
 with conn:
-    c.execute("INSERT INTO user VALUES(NULL, 'adomas', '123456', 'adas@gmail.com');")
-    c.execute("INSERT INTO user(username, password, email) VALUES('tomas', 'asdfgh', 'tomas@gmail.com');")
-    c.execute("INSERT INTO user(username, password, email) VALUES('romas', '987654', 'romas@gmail.com');")
+    c.execute("INSERT INTO user VALUES(NULL, 'adam', '123456', 'adam@gmail.com');")
+    c.execute("INSERT INTO user(username, password, email) VALUES('tom', 'asdfgh', 'tom@gmail.com');")
+    c.execute("INSERT INTO user(username, password, email) VALUES('ryan', '987654', 'ryan@gmail.com');")
