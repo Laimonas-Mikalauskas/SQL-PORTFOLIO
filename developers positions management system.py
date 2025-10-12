@@ -16,7 +16,7 @@ class Python_Developer(Base):
     role = Column("Python Developer", String)
     started_working = Column("2015/06/30", Integer)
     salary = Column("5000", Integer)
-    experience = Column("7years", Integer)
+    experience = Column("7 years", Integer)
 
     def __init__(self):
         self.name = "Garry"
