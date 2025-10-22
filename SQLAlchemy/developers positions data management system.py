@@ -20,7 +20,7 @@ class Python_Developer(Base):
 
     def __init__(self):
         self.name = "Garry"
-        self.surname ="Peterson"
+        self.surname = "Peterson"
         self.birthday = "1990"
         self.role = "Python Developer"
         self.started_working = "2015/06/30"
