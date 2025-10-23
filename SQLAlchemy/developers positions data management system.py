@@ -7,6 +7,10 @@ Base = declarative_base()
 engine = create_engine('sqlite:///developers.db', echo=False)
 Session = sessionmaker(bind=engine)
 
+list = "Employees"
+print("Employees")
+print(type("Employees"))
+
 class Python_Developer(Base):
     __tablename__ = "Python"
     id = Column(Integer, primary_key=True)
