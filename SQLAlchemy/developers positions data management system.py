@@ -305,11 +305,17 @@ def main():
     actions = {
         '1': add_employee,
         '2': add_position,
+        '3': add_salary,
+        '4': add_experience,
         '3': update_employee,
         '4': update_position,
+        '5': update_salary,
+        '6': update_experience,
         '5': delete_employee,
         '6': delete_position,
-        '7': list_employees,
+        '7': delete_salary,
+        '8': delete_experience,
+        '9': list_employees,
         '0': lambda: sys.exit("👋 Exiting..."),
     }
 
@@ -317,10 +323,16 @@ def main():
         print("\n📚 Workplace Menu:")
         print("1. Add Employee")
         print("2. Add Position")
+        print("3. Add Salary")
+        print("4. Add Experience")
         print("3. Update Employee")
         print("4. Update Position")
+        print("5. Update Salary")
+        print("6. Update Experience")
         print("5. Delete Employee")
         print("6. Delete Position")
+        print("7. Delete Salary")
+        print("8. Delete Experience")
         print("7. List All Employees")
         print("8. List All Positions")
         print("9. Employee job history")
