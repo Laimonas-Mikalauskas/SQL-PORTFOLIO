@@ -285,6 +285,19 @@ def update_position(param):
     pass
 def delete_position(param):
     pass
+def add_salary(param):
+    pass
+def update_salary(param):
+    pass
+def delete_salary(param):
+    pass
+def add_experience(param):
+    pass
+def update_experience(param):
+    pass
+def delete_experience(param):
+    pass
+    
 def list_employees(param):
     pass
 
