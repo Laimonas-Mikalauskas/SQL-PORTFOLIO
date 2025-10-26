@@ -27,7 +27,7 @@ INSERT INTO authors (name, country) VALUES (?, ?)
 """, [
     ('Jonas Jonaitis', 'Lithuania'),
     ('Emily', 'USA'),
-    ('Haruky', 'Japan')
+    ('Haruki', 'Japan')
 ])
 
 cursor.executemany("""
