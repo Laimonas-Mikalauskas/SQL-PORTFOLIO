@@ -7,7 +7,7 @@ Base = declarative_base()
 engine = create_engine('sqlite:///developers.db', echo=False)
 Session = sessionmaker(bind=engine)
 
-list = "Employees"
+Table = "Employees"
 print("Employees")
 print(type("Employees"))
 
