@@ -26,7 +26,7 @@ cursor.execute('INSERT INTO clients (full_name, email, age, country) VALUES (?, 
 # cursor.execute('INSERT INTO clients (full_name, email, age, country) VALUES (?, ?, ?, ?)',
 #                (None, 'olivia@example.com', 35, 'USA'))
 # cursor.execute('INSERT INTO clients (full_name, email, age, country) VALUES (?, ?, ?, ?)',
-#                ('Mark', 'mark@example.com', 5, 'Canada'))
+#                ('Mark Anderson', 'mark@example.com', 20, 'Canada'))
 
 
     
