@@ -10,4 +10,7 @@ This project is a SQLAlchemy ORM designed to manage employees data - personal in
 - Object-Oriented Programming (OOP)
 - ORM (Object Relational Mapping)
 - Database Relationships
+
+### File location
+- This file can be found in 'SQLAlchemy' folder
   
