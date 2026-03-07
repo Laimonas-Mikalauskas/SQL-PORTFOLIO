@@ -8,6 +8,6 @@ This project is a SQLAlchemy ORM designed to manage employees data - personal in
 
 ## Concepts
 - Object-Oriented Programming (OOP)
-- ORM Mapping (Object Relational Mapping)
+- ORM (Object Relational Mapping)
 - Database Relationships
   
