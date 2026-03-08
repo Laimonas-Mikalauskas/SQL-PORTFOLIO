@@ -327,6 +327,52 @@ def __init__(self, employee_id, data_type=None, access_level=None):
 def __repr__(self):
     return f"Data_Privacy(employee_id={self.employee_id}, data_type='{self.data_type}', access_level='{self.access_level}')"
 
+# SQL Injection prevention
+
+class SQL_Injection_Prevention(Base):
+    __tablename__ = "SQL Injection Prevention"
+    id = Column(Integer, primary_key=True)
+    employee_id = Column(Integer)
+    query = Column("SELECT * FROM Employees", String)
+ 
+def prevent_sql_injection(user_input):
+    user_input = prevent_sql_injection(user_input)
+    if any(char in user_input for char in [";", "--", "/*", "*/", "@@", "@", "char", "nchar", "varchar", "nvarchar", "alter", "begin", "cast", "create", "cursor", "declare", "delete", "drop", "end", "exec", "execute", "fetch", "insert", "kill", "select", "sys", "sysobjects", "syscolumns", "table", "update"]):
+        raise ValueError("Potential SQL injection detected.")
+    return user_input
+
+def prevent_sql_injection_with_ORM(user_input):
+    if any(char in user_input for char in [";", "--", "/*", "*/", "@@", "@", "char", "nchar", "varchar", "nvarchar", "alter", "begin", "cast", "create", "cursor", "declare", "delete", "drop", "end", "exec", "execute", "fetch", "insert", "kill", "select", "sys", "sysobjects", "syscolumns", "table", "update"]):
+        raise ValueError("Potential SQL injection detected.")
+    return user_input
+
+def execute_safe_query(user_input):
+    safe_query = prevent_sql_injection_with_ORM(user_input)
+    session = Session()
+    try:
+        result = session.execute(safe_query)
+        return result.fetchall()
+    except Exception as e:
+        print("Query execution failed:", e)
+    finally:
+        session.close()
+
+
+def user_query():
+    user_input = input("Enter your SQL query: ")
+    try:
+        safe_query = prevent_sql_injection(user_input)
+        print("Query is safe to execute.")
+    except ValueError as e:
+        print(e)
+
+raq = input("Enter your query: ")
+try:
+    safe_query = prevent_sql_injection(raq)
+    print("Query is safe to execute.")
+except ValueError as e:
+    print(e)
+
 
 # Data backup and recovery
 
@@ -498,16 +544,6 @@ def main():
 
 if __name__ == "__main__":   
     main()
- 
-
-
-
-
-
-
-
-
-
 
 
 
