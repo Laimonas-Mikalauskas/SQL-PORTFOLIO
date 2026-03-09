@@ -19,10 +19,10 @@ This personal project done besides the academic assignments implements a structu
 - Python
 - SQLAlchemy
 
-## Concepts
-- Object-Oriented Programming (OOP)
-- Object Relational Mapping (ORM)
-- SQL Injection prevention
+## Concepts & learning goals
+- Object-Oriented Programming (OOP) usage in database design and modelling by applying core Python    fundamentals
+- Object Relational Mapping (ORM) usage with SQLAlchemy while executing full CRUD operations
+- SQL Injection prevention by using ORM to protect data management system from vulnerabilities 
 
 ### File location
 - This file can be found in 'SQLAlchemy' folder
