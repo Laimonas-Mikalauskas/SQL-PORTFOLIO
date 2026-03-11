@@ -20,10 +20,11 @@ This personal project done besides the academic assignments implements a structu
 - SQLAlchemy
 
 ## Concepts & learning goals
-- Object-Oriented Programming (OOP) usage in database design and modelling by applying core Python    fundamentals
+- Object-Oriented Programming (OOP) usage in database design and modelling by applying core Python fundamentals
+- Implementation of console-based data visualization of processed SQL query results by using Python classes and OOP design principles.
 - Object Relational Mapping (ORM) usage with SQLAlchemy while executing full CRUD operations
 - SQL Injection prevention by using ORM to protect data management system from vulnerabilities 
-
+- 
 ### File location
 - This file can be found in 'SQLAlchemy' folder
   
